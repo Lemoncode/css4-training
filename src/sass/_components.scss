@@ -1,0 +1,46 @@
+@import "_variables";
+
+
+@mixin header {
+  background-color: grey; // TODO: Move to variables
+}
+
+@mixin login { // Discuss elements
+  background-color: yellow; // TODO: Move to variables
+  font-family: monospace;
+  padding: 1rem;
+}
+
+@mixin login__info {
+  font: {
+    size: $bigSize;
+  }
+}
+
+@mixin user {
+  background-color: black; // TODO: Move to variables
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+@mixin user__info {
+  font: {
+    size: $bigSize;
+  }
+}
+
+@mixin user__role {
+  font: {
+    size: $smallSize;
+  }
+}
+
+@mixin title {
+  font: {
+    size: $biggestSize;
+  }
+}
+
+@mixin content {
+  background-color: green;
+}

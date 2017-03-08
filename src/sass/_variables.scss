@@ -1,0 +1,11 @@
+// TODO: Discuss the font sizes.
+// TODO: Discuss set of font sizes.
+$baseSize: 1rem + 0.1;
+
+$bigSize: $baseSize * 1.5; // 50% bigger
+$biggerSize: $baseSize * 2; // 100% bigger
+$biggestSize: $baseSize * 3; // 200% bigger
+
+$smallSize: $baseSize * (0.75); // 25% smaller
+$smallerSize: $baseSize / 2; // 50% smaller
+$snallestSize: $baseSize / 4 // 75% smaller 
