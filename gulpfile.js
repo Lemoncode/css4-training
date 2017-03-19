@@ -18,11 +18,8 @@ const systemToBrowser = {
 
 const openOptions = {
   uri: `http://localhost:${serverOptions.port}`,
-  app: resolveBrowser()
+  app: systemToBrowser[os.platform()]
 };
-
-const resolveBrowser = () => systemToBrowser[resolveSystem()];
-const resolveSystem = () => os.platform().toString();
 
 gulp.task('sass',
   () => gulp.src('./src/sass/**/*.scss')
