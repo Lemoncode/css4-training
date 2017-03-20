@@ -31,7 +31,7 @@ gulp.task('sass:watch', () => gulp.watch('./src/sass/**/*.scss', ['sass']));
 
 gulp.task('reload', () => gulp.src('./src/**/*').pipe(connect.reload()));
 
-gulp.task('watch', () => gulp.watch(['./src/**/*'], ['reload'])); 
+gulp.task('watch', () => gulp.watch(['./src/**/*'], ['reload']));
 
 gulp.task('open', () => gulp.src(__filename).pipe(open(openOptions)));
 
