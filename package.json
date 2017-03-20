@@ -1,10 +1,9 @@
 {
   "name": "css4-training",
   "version": "1.0.0",
-  "description": "Project for training on css4 grid and flexbox",
+  "description": "Training Material for CSS4 Lemoncode course by Jaime Salas and Carmen Ansio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp",
     "compile": "gulp sass"
   },
@@ -19,15 +18,15 @@
     "sass"
   ],
   "author": "Jaime Salas",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Lemoncode/css4-training/issues"
   },
   "homepage": "https://github.com/Lemoncode/css4-training#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-connect": "^5.0.0",
-    "gulp-open": "^2.0.0",
-    "gulp-sass": "^3.1.0"
+    "gulp": "3.9.1",
+    "gulp-connect": "5.0.0",
+    "gulp-open": "2.0.0",
+    "gulp-sass": "3.1.0"
   }
 }
