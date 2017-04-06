@@ -10,27 +10,15 @@ const serverOptions = {
   livereload: true
 };
 
-const resolveBrowser = () => {
-  let browser;
-
-  switch (os.platform()) {
-    case 'darwin':
-      browser = 'google chrome';
-      break;
-    case 'win32':
-      browser = 'chrome';
-      break;
-    case 'linux':
-      browser = 'google-chrome';
-      break;
-  }
-
-  return browser;
+const systemToBrowser = {
+  'darwin': 'google chrome',
+  'win32': 'chrome',
+  'linux': 'google-chrome'
 };
 
 const openOptions = {
   uri: `http://localhost:${serverOptions.port}`,
-  app: resolveBrowser()
+  app: systemToBrowser[os.platform()]
 };
 
 gulp.task('sass',
@@ -41,10 +29,9 @@ gulp.task('sass',
 
 gulp.task('sass:watch', () => gulp.watch('./src/sass/**/*.scss', ['sass']));
 
-
 gulp.task('reload', () => gulp.src('./src/**/*').pipe(connect.reload()));
 
-gulp.task('watch', () => gulp.watch(['./src/**/*'], ['reload'])); // Add compile SASS
+gulp.task('watch', () => gulp.watch(['./src/**/*'], ['reload']));
 
 gulp.task('open', () => gulp.src(__filename).pipe(open(openOptions)));
 
