@@ -2,13 +2,13 @@
 // TODO: Discuss set of font sizes.
 $baseSize: 1rem + 0.1;
 
-$bigSize: $baseSize * 1.5; // 50% bigger
-$biggerSize: $baseSize * 2; // 100% bigger
-$biggestSize: $baseSize * 3; // 200% bigger
+$bigSize: $baseSize * 1.5;
+$biggerSize: $baseSize * 2;
+$biggestSize: $baseSize * 3;
 
-$smallSize: $baseSize * (0.75); // 25% smaller
-$smallerSize: $baseSize / 2; // 50% smaller
-$smallestSize: $baseSize / 4 // 75% smaller
+$smallSize: $baseSize * (0.75);
+$smallerSize: $baseSize / 2;
+$smallestSize: $baseSize / 4;
 
 $defaultHeaderColor: grey;
 $defaultLoginColor: yellow;
