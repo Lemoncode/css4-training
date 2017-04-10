@@ -1,14 +1,14 @@
 @import "_variables";
-
+// TODO: Discuss block elements
 
 @mixin header {
-  background-color: grey; // TODO: Move to variables
+  background-color: $defaultHeaderColor;
 }
 
-@mixin login { // Discuss elements
-  background-color: yellow; // TODO: Move to variables
+@mixin login {
+  background-color: $defaultLoginColor;
   font-family: monospace;
-  padding: 1rem;
+  padding: $basePadding;
 }
 
 @mixin login__info {
@@ -18,9 +18,9 @@
 }
 
 @mixin user {
-  background-color: black; // TODO: Move to variables
+  background-color: $defaultUserColor;
   font-family: sans-serif;
-  padding: 1rem;
+  padding: $basePadding;
 }
 
 @mixin user__info {
@@ -42,5 +42,5 @@
 }
 
 @mixin content {
-  background-color: green;
+  background-color: $defaultContentColor;
 }

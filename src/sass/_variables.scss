@@ -8,4 +8,11 @@ $biggestSize: $baseSize * 3; // 200% bigger
 
 $smallSize: $baseSize * (0.75); // 25% smaller
 $smallerSize: $baseSize / 2; // 50% smaller
-$snallestSize: $baseSize / 4 // 75% smaller 
+$smallestSize: $baseSize / 4 // 75% smaller
+
+$defaultHeaderColor: grey;
+$defaultLoginColor: yellow;
+$defaultUserColor: black;
+$defaultContentColor: green;
+
+$basePadding: 1rem;
