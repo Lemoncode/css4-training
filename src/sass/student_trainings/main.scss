@@ -1,45 +1,39 @@
 @import "../init";
-@import "../components";
+@import "../blocks";
 
-//BEM mixins for positioning
 .header-student {
+  @include header;
   display: flex;
   flex-direction: row;
-}
 
-.header {
-  @include header;
-}
-
-.user-student {
-  order: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.user {
-  @include user;
-
-  &__info {
-    @include user__info;
-    color: blue;
+  .user-student {
+    @include user;
     order: 1;
-  }
+    display: flex;
+    flex-direction: column;
 
-  &__role {
-    @include user__role;
-    color: pink;
-    order: 2;
+    &__info {
+      @include user__info;
+      color: blue;
+      order: 1;
+    }
+
+    &__role {
+      @include user__role;
+      color: pink;
+      order: 2;
+    }
   }
 }
 
-.header-main { // Rename
+.header-main {
   order: 2;
   flex-grow: 3;
 }
 
-.login {
+.header-login {
   @include login;
+  order: 3;
 
   &__info {
     @include login__info;
@@ -47,28 +41,18 @@
   }
 }
 
-.header-login {
-  order: 3;
-}
-
-.content {
-  @include content;
-}
-
 .content-student {
+  @include content;
   margin-top: 0px;
   height: 1000px;
-}
 
-.title {
-  @include title;
-}
+  .title-student {
+    @include title;
+    color: white;
+    text-align: center;
 
-.title-student {
-  color: white;
-  text-align: center;
-
-  p {
-    margin-top: 0px;
+    p {
+      margin-top: 0px;
+    }
   }
 }
