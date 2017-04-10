@@ -1,0 +1,46 @@
+@import "_variables";
+// TODO: Discuss block elements
+
+@mixin header {
+  background-color: $defaultHeaderColor;
+}
+
+@mixin login {
+  background-color: $defaultLoginColor;
+  font-family: monospace;
+  padding: $basePadding;
+}
+
+@mixin login__info {
+  font: {
+    size: $bigSize;
+  }
+}
+
+@mixin user {
+  background-color: $defaultUserColor;
+  font-family: sans-serif;
+  padding: $basePadding;
+}
+
+@mixin user__info {
+  font: {
+    size: $bigSize;
+  }
+}
+
+@mixin user__role {
+  font: {
+    size: $smallSize;
+  }
+}
+
+@mixin title {
+  font: {
+    size: $biggestSize;
+  }
+}
+
+@mixin content {
+  background-color: $defaultContentColor;
+}
