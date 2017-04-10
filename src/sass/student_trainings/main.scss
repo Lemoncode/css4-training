@@ -24,20 +24,20 @@
       order: 2;
     }
   }
-}
 
-.header-main {
-  order: 2;
-  flex-grow: 3;
-}
+  .header-main {
+    order: 2;
+    flex-grow: 3;
+  }
 
-.header-login {
-  @include login;
-  order: 3;
+  .header-login {
+    @include login;
+    order: 3;
 
-  &__info {
-    @include login__info;
-    color: darkblue;
+    &__info {
+      @include login__info;
+      color: darkblue;
+    }
   }
 }
 
