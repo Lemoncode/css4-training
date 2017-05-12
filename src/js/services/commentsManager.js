@@ -3,7 +3,6 @@
         const comments = document.getElementById('comments');
         if(!comments) {
             throw 'No comments block added, or missing id.'
-            return;
         }
 
         document.body.addEventListener('click', (event) => {
