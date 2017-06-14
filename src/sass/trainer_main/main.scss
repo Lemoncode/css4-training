@@ -6,7 +6,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: "header"
-                       "content"; // NOTE: Think about these names.
+                       "content";
 
  .header-trainer {
    @include header;
@@ -49,10 +49,9 @@
    }
  }
 
- // NOTE: We can use flexbox as well.
  .content-trainer {
    grid-area: content;
-   display: grid; // subgrid does not work
+   display: grid; 
 
    grid-template-columns: 3fr 1fr;
    grid-template-rows: auto;
