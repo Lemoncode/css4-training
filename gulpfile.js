@@ -6,7 +6,7 @@ const os = require('os'),
 
 const serverOptions = {
   root: 'src',
-  port: 9008,
+  port: 9011,
   livereload: true
 };
 

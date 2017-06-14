@@ -1,0 +1,18 @@
+// TODO: Discuss the font sizes.
+// TODO: Discuss set of font sizes.
+$baseSize: 1rem + 0.1;
+
+$bigSize: $baseSize * 1.5;
+$biggerSize: $baseSize * 2;
+$biggestSize: $baseSize * 3;
+
+$smallSize: $baseSize * (0.75);
+$smallerSize: $baseSize / 2;
+$smallestSize: $baseSize / 4;
+
+$defaultHeaderColor: grey;
+$defaultLoginColor: yellow;
+$defaultUserColor: black;
+$defaultContentColor: green;
+
+$basePadding: 1rem;
